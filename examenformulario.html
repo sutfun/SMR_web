@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InformaticaS.L</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        div{text-align: justify; margin-left: 45em; margin-right: 45em; padding-left: 20px;}
+        legend{text-align: center; color: red;}
+        body{font-family: Merriweather;}
+        h1{font-family: Pacifico; text-align: center;}
+        fieldset{border: solid red;}
+        nav{text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Informatica S.L</h1>
+    <nav>
+        <a href="#persona">Datos personales</a>
+        <a href="#sexo">Sexo</a>
+        <a href="#contacto">Datos de contacto</a>
+        <a href="#puestos">Puestos a los que postularse</a>
+        <a href="#otros">Otros datos</a>
+    </nav>
+    </header>
+    <form>
+        <div>
+    <fieldset><legend id="persona"><p>Datos personales</p></legend>
+        <label>Nombre: </label><input type="text" required placeholder="Escriba su nombre"><p></p>
+        <label>Apellidos: </label><input type="text" required placeholder="Escribe tu apellido"><p></p>
+        <label>DNI: </label><input type="text" required><p></p>
+        <label>Fecha de nacimiento: </label><input type="date" required><p></p>
+        <label>Password: </label><input type="password" required><p></p>
+        <label>Color favorito: </label><input type="color" required><p></p>
+    </fieldset>    
+    </div>
+        <div>
+        <fieldset>
+        <legend id="sexo"><p>Sexo</p></legend>
+         <input type="radio" value="0" name="Sexo">Hombre</input>
+         <input type="radio" value="1" name="Sexo">Mujer</input>
+         <input type="radio" value="2" name="Sexo">Otro</input>
+        </fieldset>
+        </div>
+        <div>
+        <fieldset>
+         <legend id="contacto"><p>Datos de contacto</p></legend>
+        <label>Correo electronico: </label><input type="email" required placeholder="Por ejemplo usuario@dominio.es"><p></p>
+        <label>Telefono: </label><input type="number" size="9" maxlength="9" placeholder="612345678" required><p></p>
+        <label>Dirrecion: </label><input type="text" placeholder="Su Dirrecion" required><p></p>
+        <label>Codigo postal: </label><input type="number" placeholder="Su codigo postal" required size="5" maxlength="5"><p></p>
+        <label>Ciudad</label><p></p>
+        <select size="3">
+            <option value="Ciudad">Madrid</option>
+            <option value="Ciudad">Barcelona</option>
+            <option value="Ciudad">Valencia</option>
+            <option value="Ciudad">Sevilla</option>
+            <option value="Ciudad">Bilbao</option>
+        </select>
+        </fieldset>    
+    </div>
+        <div>
+            <fieldset>
+    <legend id="puestos"><p>Puestos a los que postularse</p></legend>
+        <input type="checkbox"><label>Programador</label><br/>
+        <input type="checkbox"><label>Administrador de redes</label><br/>
+        <input type="checkbox"><label>Maquetador</label><br/>
+        <input type="checkbox"><label>Responsable de infraestructuras</label><br/>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+    <legend id="otros"><p>Otros Datos</p></legend>
+        <label>Subir curriculum</label><input type="file"><p></p>
+        <label>Numero favorito</label><input type="number" minlength="1" maxlength="3" placeholder="Del 1 al 100">(Del 1 al 100)</input><p></p>
+        <label>Expectativa salarial</label><br/><span>12000</span><input type="range">24000</input><p></p>
+        <label>Linkedin: </label><input type="url" placeholder="https://www.linkedin.com/in/usuario"><p></p>
+        <label>Comentarios: </label><textarea width="20px" height="20px" placeholder="Escribe cualquier cosa que quieras contarnos" label-for="Comentarios"></textarea><p></p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borar">
+            </fieldset>    
+    </div>
+    </form>
+    <footer>
+        <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, quia neque? Minima enim fuga magni rerum laboriosam voluptate vitae eligendi a? Hic consectetur reiciendis quasi eligendi laborum voluptatem doloribus pariatur.
+        </div>
+    </footer>
+</body>
+</html>
