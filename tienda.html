@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: auto; width: 600px; border: 1px solid #000; height: 997px; box-sizing: content-box;
+        }
+        img#imgtienda{width: 100px; float: left; margin-top: 10px;}
+        nav{display: inline-block; text-align: right; width: 500px;}
+        ol li{display: inline-block; list-style: none; font-weight: bolder; padding: 15px 20px;}
+        ol li:hover{background-color: black; color: white;}
+        ol{margin: 0px;}
+        header{
+            border-bottom: 10px rgb(0, 0, 94) solid;
+        }
+        article.n1{float: left; width: 250px; height: 200px;background-color: white;}
+        article.n2{float: right; width: 350px; height: 200px;}
+        article.n4{float: right; width: 200px; height: 200px;}
+        article.n3{float: left; width: 400px; height: 200px;}
+        article.n5{float: left; background-color: white; height: 200px; width: 200px;}
+        article.n6{float: right; height: 200px; width: 400px; background-color: rgb(173, 84, 173);}
+        li.margen{margin-top: 20px; margin-bottom: 20px;}
+        article.n7{float: left; width: 400px; height: 300px; background-color: blue; padding-top: 20px;}
+        article.n8{float: right; width: 200px; height: 300px; background-color: gray;}
+        input{background-color: blue; color: white; border: 2px solid white;}
+        label{color: white; padding-right: 20px;}
+        textarea{background-color: blue; border: 2px solid white; width: 200px; height: 75px;}
+    </style>
+</head>
+<body>
+    <header>
+        <img id="imgtienda" src="logo.png" alt="Logo de mi tienda">
+<nav>
+            <ol>
+                <li>Nosotros</li>
+                <li>Productos</li>
+                <li>Envio</li>
+                <li>Contacto</li>
+            </ol>
+</nav>
+    </header>
+    <div>
+        <article class="n1"><h1>Nosotros</h1><p>Desde 1900 nos dedicamos a la venta de productos muy chulos</p></article>
+        <article class="n2" style="background-color: gray;"><img src="ordenador.png" width="300px" height="200px"></article>
+    </div>
+    <div>
+        <article class="n3" style="background-color: rgb(77, 0, 77);"><p style="text-align: center; margin-top: 70px; color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias in sequi praesentium esse dolorum sit quam obcaecati ad hic dicta veniam at velit optio cumque delectus unde, et cupiditate? Nam?</p></article>
+        <article class="n4" style="background-color: rgb(4, 66, 4);"><img src="comercial.png" alt="Imagen comercial" width="200px" height="200px" style="text-align: center;"></article>
+    </div>
+    <div>
+        <article class="n5"><h2>Nuestras Tiendas</h2><select><option selected>Seleccione Tienda</option><option>Madrid</option><option>Alcorcon</option><option>Badajoz</option></select><p>Tienda X</p><p>Avda. CSS, 12</p><p>28040 Madrid</p></article>
+        <article class="n6"><ul style="padding-left: 40px; color: white;"><li class="marger">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li class="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li class="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li></ul></article>
+    </div>
+    <div>
+        <article class="n7"><form><label for="nombre">nombre</label><input type="text" placeholder="Escribe tu nombre"><p><label for="apellido">Apellido:</label><input type="text" placeholder="Escribe tu Apellido"></p><p><label for="movil">Movil:</label><input type="tel" placeholder="Escribe tu telefono"></p><p><label for="correo">E-mail:</label><input type="email" placeholder="Escribe tu E-mail"></p><p><label for="consulta">Consulta:</label><textarea></textarea></p></form><img style="margin-left: 330px;" src="boton.png" alt="boton" width="50px" height="25px"></article>
+        <article class="n8"><h3 style="text-align: center; color: green;">Contacto</h3><img src="correo.png" width="200px" height="150px" alt="Imagen de correo"><p style="text-align: center; color: green;">miTienda@mitienda.com</p></article>
+    </div>
+    <div>
+        <article style="color: white; background-color: rgb(83, 5, 83); text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est necessitatibus recusandae explicabo, possimus iure maxime iusto fugit, id asperiores tempore.</article>
+    </div>
+</body>
+</html>
