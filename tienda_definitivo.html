@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: auto; width: 600px; border: 1px solid #000; height: 1040px; box-sizing: content-box;font-family: 'Merriweather', serif;
+        }
+        img#imgtienda{width: 100px; float: left; margin-top: 10px;}
+
+        nav{display: inline-block; text-align: right; width: 500px;}
+
+        ol li{display: inline-block; list-style: none; font-weight: bolder; padding: 15px 20px;}
+
+        ol li:hover{background-color: black; color: white;}
+
+        ol{margin: 0px;}
+
+        header{
+            border-bottom: 10px rgb(0, 0, 94) solid;
+        }
+        article#n1{float: left; width: 250px; height: 200px;background-color: white; padding-left: 10px;}
+
+        article#n2{float: right; width: 350px; height: 200px;}
+
+        article#n4{float: right; width: 200px; height: 200px;}
+
+        article#n3{float: left; width: 400px; height: 200px;}
+
+        article#n5{float: left; background-color: white; height: 210px; width: 200px; padding-left: 10px;}
+
+        article#n6{float: right; height: 210px; width: 400px; background-color: rgb(173, 84, 173);}
+
+        li#margen{margin-top: 20px; margin-bottom: 20px;}
+
+        article#n7{float: left; width: 300px; height: 325px; background-color: blue; padding-top: 20px; padding-left: 10px;}
+
+        article#n8{float: right; width: 300px; height: 325px; background-color: gray;}
+
+        article#n9{display: inline-block; width: 600px; height: 40px; background-color: rgb(92, 15, 92); color: white; text-align: center; font-size: smaller;}
+
+        input{background-color: blue; color: white; border: 2px solid white;}
+
+        label{color: white; padding-right: 20px;}
+
+        textarea{background-color: blue; border: 2px solid white; width: 175px; height: 75px;}
+
+        h1,h2,nav{font-family: 'Anton', sans-serif;}
+
+        h1,h2{color: rgb(86, 39, 129);}
+
+        img[alt="Imagen de correo"]{margin-left: 50px !important;}
+
+        a{text-align: center; color: green; padding-left: 50px;}
+
+        label{width: 100px; padding-top: 5px; display: inline-block; vertical-align: auto;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="imgtienda" src="logo.png" alt="Logo de mi tienda">
+<nav>
+            <ol>
+                <li>Nosotros</li>
+                <li>Productos</li>
+                <li>Envio</li>
+                <li>Contacto</li>
+            </ol>
+</nav>
+    </header>
+    <div>
+        <article id="n1"><h1>Nosotros</h1><p>Desde 1900 nos dedicamos a la venta de productos muy chulos</p></article>
+        <article id="n2" style="background-color: gray;"><img src="ordenador.png" width="300px" height="200px"></article>
+    </div>
+    <div>
+        <article id="n3" style="background-color: rgb(77, 0, 77);"><p style="text-align: center; margin-top: 70px; color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias in sequi praesentium esse dolorum sit quam obcaecati ad hic dicta veniam at velit optio cumque delectus unde, et cupiditate? Nam?</p></article>
+        <article id="n4" style="background-color: rgb(4, 66, 4);"><img src="comercial.png" alt="Imagen comercial" width="200px" height="200px" style="text-align: center;"></article>
+    </div>
+    <div>
+        <article id="n5"><h2>Nuestras Tiendas</h2><select><option selected>Seleccione Tienda</option><option>Madrid</option><option>Alcorcon</option><option>Badajoz</option></select><p>Tienda X</p><p>Avda. CSS, 12</p><p>28040 Madrid</p></article>
+        <article id="n6"><ul style="padding-left: 40px; color: white;"><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li></ul></article>
+    </div>
+    <div>
+        <article id="n7"><form><label for="nombre">Nombre</label><input id="nombre" type="text" required><p><label for="apellido">Apellido:</label><input id="apellido" type="text" required></p><p><label for="movil">Movil:</label><input id="movil" type="text" required min="9" max="9" pattern="6"></p><p><label for="correo">E-mail:</label><input id="correo" type="email" required></p><p><label for="consulta" style="vertical-align: 55px;">Consulta:</label><textarea id="consulta" required></textarea></p></form><img style="margin-left: 220px;" src="boton.png" alt="boton" width="50px" height="25px"></article>
+        <article id="n8"><h3 style="text-align: center; color: green;">Contacto</h3><img src="correo.png" width="200px" height="150px" alt="Imagen de correo"><p><a href="mailto:mitienda@mitienda.com">mitienda@mitienda.com</a></p></article>
+    </div>
+    <div>
+        <article id="n9">sunt nisi suscipit saepe, totam eum tempora repudiande numquam tenetur voluptatibus minima</article>
+    </div>
+</body>
+</html>
