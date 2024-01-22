@@ -1,0 +1,17 @@
+ol>li>ol{
+display: none;
+}
+li:hover ol{
+    display:block;
+    width: 75px;
+    height: auto;
+}
+li{
+    list-style: none;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 75px;
+    border: 2px solid white;
+    padding: 0%;
+}
