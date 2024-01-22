@@ -1,0 +1,16 @@
+div{
+    width: 200px 
+    ; height: 250px; 
+    background-color: red; 
+    border-radius: 30px 70px;
+    position: absolute;
+    left: 150px;
+    top: -150px;
+}
+div:hover{
+    transition-duration: 15s;
+    transition-delay: 1s;
+    top: 550px;
+    background-color: yellow;
+    transition-property: top;
+}
