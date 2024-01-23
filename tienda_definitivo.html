@@ -25,7 +25,7 @@
 
         ol li:hover{background-color: black; color: white;}
 
-        ol{margin: 0px;}
+        ol{margin: 0px; padding: 0%;}
 
         header{
             border-bottom: 10px rgb(0, 0, 94) solid;
@@ -62,10 +62,15 @@
 
         img[alt="Imagen de correo"]{margin-left: 50px !important;}
 
-        a{text-align: center; color: green; padding-left: 50px;}
+        a{text-align: center; color: green;}
 
         label{width: 100px; padding-top: 5px; display: inline-block; vertical-align: auto;}
 
+        ol>li>ol{display: none; padding: 0%;}
+
+        li:hover ol{display: block; position: absolute;}
+
+        li:hover{list-style: none; background-color: black; color: white;}
     </style>
 </head>
 <body>
@@ -73,7 +78,13 @@
         <img id="imgtienda" src="logo.png" alt="Logo de mi tienda">
 <nav>
             <ol>
-                <li>Nosotros</li>
+                <li>Nosotros
+                    <ol>
+                        <li>Submenu1</li></br>
+                        <li>Submenu2</li></br>
+                        <li>Submenu3</li></br>
+                    </ol>
+                </li>
                 <li>Productos</li>
                 <li>Envio</li>
                 <li>Contacto</li>
@@ -90,7 +101,7 @@
     </div>
     <div>
         <article id="n5"><h2>Nuestras Tiendas</h2><select><option selected>Seleccione Tienda</option><option>Madrid</option><option>Alcorcon</option><option>Badajoz</option></select><p>Tienda X</p><p>Avda. CSS, 12</p><p>28040 Madrid</p></article>
-        <article id="n6"><ul style="padding-left: 40px; color: white;"><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li></ul></article>
+        <article id="n6"><ul style="padding-left: 40px; color: white !important;"><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li><li id="margen">Omnis, quos ea dignssimos, porro cumque quaerat voluptates www.unaweb.com</li></ul></article>
     </div>
     <div>
         <article id="n7"><form><label for="nombre">Nombre</label><input id="nombre" type="text" required><p><label for="apellido">Apellido:</label><input id="apellido" type="text" required></p><p><label for="movil">Movil:</label><input id="movil" type="text" required min="9" max="9" pattern="6"></p><p><label for="correo">E-mail:</label><input id="correo" type="email" required></p><p><label for="consulta" style="vertical-align: 55px;">Consulta:</label><textarea id="consulta" required></textarea></p></form><img style="margin-left: 220px;" src="boton.png" alt="boton" width="50px" height="25px"></article>
