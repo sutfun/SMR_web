@@ -1,0 +1,58 @@
+div{width: 30%; height: auto; border: 1px solid black; margin: auto; box-sizing: content-box;}
+h1{
+    color: white;
+    text-align: right;
+    
+}
+#recuperate{
+    background-color: red;
+    height: 10%;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+ol li{display: inline-block; width: 100%; height: auto; text-align: center; border: 1px solid red;}
+
+.submenu{background-color: gray; color: white;}
+
+ol{margin: 0%; padding: 0%; position: relative;}
+
+ol>li>ol{display: none; width: 100%; height: auto;}
+
+li:hover ol{display: block;}
+
+nav{box-sizing: border-box; width: 100%; height: auto;}
+
+.opcion:hover{
+    background-color: black; color: white;
+}
+#concentrate{
+    display: block;
+    border-bottom: 2px solid black;
+    color: red;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: bolder;
+    text-align: justify!important
+}
+article{
+    font-size: large;
+}
+p::first-line{
+    color: red;
+}
+p{
+    text-align: center;
+}
+
+article::first-letter{    
+    font-size: 4em;
+    float: left;
+    color: red;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
