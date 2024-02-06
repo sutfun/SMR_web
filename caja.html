@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .caja{
+            border: 1px solid black;
+            display: inline-block;
+            width: 600px;
+            height: 100px;
+        }
+        #caja1{
+            margin: auto;
+            display: block;
+            background-color: red;
+        }
+        #caja2{
+            float: left;
+            background-color: blue;
+        }
+        #caja3{
+            float: right;
+            clear: right;
+            background-color: green;
+        }
+        #caja4{
+            clear: both;
+            margin: auto;
+            display: block;
+            background-color: yellow;
+        }
+        #texto{
+            float: left;
+            height: 100px;
+            width: 600px;
+            text-align: center;
+            font-size: 5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja" id="caja1">1</div><div class="caja" id="caja2">2</div><div id="texto"><span>no nos vamos hoy</span></div><div class="caja" id="caja3">3</div><div class="caja" id="caja4">4</div>
+</body>
+</html>
