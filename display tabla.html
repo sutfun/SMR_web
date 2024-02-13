@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style>
+        div{
+            display: inline-table;
+        }
+        p{
+            display: table-row;
+        }
+        span{
+            display: table-cell;
+            border: 1px solid black;
+        }
+        p:nth-child(1){
+            display: table-header-group;
+            background-color: aqua;
+        }
+        p:nth-last-child(1){
+            display: table-footer-group;
+            background-color: aquamarine;
+        }
+        .verde{
+            background-color: green;
+        }
+        .rojo{
+            background-color: red;
+        }
+        .amarillo{
+            background-color: yellow;
+        }
+        */con las tablas solo funciona el col*/
+    </style>
+</head>
+<body>
+    <div>
+        <colgroup>
+            <col class="verde">
+            <col class="rojo">
+            <col class="amarillo">
+        </colgroup>
+        <p>
+            <span>Encabezado 1</span>
+            <span>Encabezado 2</span>
+            <span>Encabezado 3</span>
+        </p>
+        <p>
+            <span>Dato 1</span>
+            <span>Dato 2</span>
+            <span>Dato 3</span>
+        </p>
+        <p>
+            <span>Dato 4</span>
+            <span>Dato 5</span>
+            <span>Dato 6</span>
+        </p>
+        <p>
+            <span>Dato 7</span>
+            <span>Dato 8</span>
+            <span>Dato 9</span>
+        </p>
+        <p>
+            <span>Pie 1</span>
+            <span>Pie 2</span>
+            <span>Pie 3</span>
+        </p> 
+    </div>
+</body>
+</html>

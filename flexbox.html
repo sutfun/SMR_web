@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        #contenedor{
+            width: 1000px;
+            margin: auto;
+            height: auto;
+        }
+        #navegacion{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            border-bottom: 5px solid aqua;
+        }
+        p{
+            padding-top: 20px;
+            width: 200px;
+            margin-left: 50px;
+            height: auto;
+        }
+        span{
+            margin-left: 20px;
+        }
+        #imagenes{
+            text-align: right;
+        }
+        #Bienvenido{
+            text-align: left;
+        }
+        /*La propiedad flex se le pone al contenedor no al contenido*/
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+    <div id="navegacion">
+        <img src="logo.jpg">
+        <p>Editorial</p>
+        <p>Catalogo</p>
+        <p>Manuscrito</p>
+        <p>Eventos</p>
+        <img src="cesta.png">
+    </div>
+    <br>
+
+    <div id="Bienvenido">Bienvenido a nuestra humilde web<div id="imagenes"><img src="facebook.jpg"><img src="instagram.jpg" alt=""><img src="twitter.jpg" alt=""><img src="linkedin.jpg" alt=""></div></div>
+    </div>
+</body>
+</html>
