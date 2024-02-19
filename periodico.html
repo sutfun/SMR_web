@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodico</title>
+    <style>
+        span{
+            border: 1px solid black;
+            flex-basis: 300px;
+        }
+        span:nth-child(4){
+            flex-basis: 600px;
+            background-color: gray;
+        }
+        span:nth-child(7){
+            flex-basis: 600px;
+            background-color: gray;
+        }
+        div:nth-child(1){
+            order: 1;
+        }
+        div:nth-child(2){
+            order: 2;
+        }
+        div:nth-child(3){
+            order: 3;
+        }
+        div:nth-child(4){
+            order: 4;
+        }
+        div:nth-child(5){
+            order: 5;
+        }
+        div:nth-child(6){
+            order: 6;
+        }
+        div:nth-child(7){
+            order: 7;
+        }
+        div:nth-child(1):hover{
+            order: 3;
+        }
+        div{
+            width: 902px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            margin: auto;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span id="uno"><a href="#1"></a></span>
+        <span id="dos"><a href="#2"></a></span>
+        <span id="tres"><a href="#3"></a></span>
+        <span id="cuatro"><a href="#4"></a></span>
+        <span id="cinco"><a href="#5"></a></span>
+        <span id="seis"><a href="#6"></a></span>
+        <span id="siete"><a href="#7"></a></span>
+    </div>
+</body>
+</html>
