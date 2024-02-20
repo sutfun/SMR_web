@@ -1,0 +1,49 @@
+@keyframes pulso{
+    0%{
+        transform: scale(2);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+@keyframes sube{
+    100%{
+        transform: translateY(-200px);
+    }
+}
+#corazon{
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+#corazon1,#corazon2{
+    background-color: red;
+    width: 60px;
+    height: 70px;
+    border-radius: 50% 50% 0 0;
+}
+#corazon1{
+    transform: rotate(-40deg);
+    position: relative;
+    left: -20px;
+}
+#corazon2{
+    transform: rotate(78deg);
+    position: relative;
+    top: -60px;
+    left: 5px;
+}
+#corazon:hover{
+    animation-name: pulso, sube;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
