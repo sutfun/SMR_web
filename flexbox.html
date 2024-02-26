@@ -6,7 +6,7 @@
     <title>Flex</title>
     <style>
         #contenedor{
-            width: 1000px;
+            width: 1024px;
             margin: auto;
             height: auto;
         }
@@ -26,10 +26,76 @@
             margin-left: 20px;
         }
         #imagenes{
-            text-align: right;
+            display: inline;
+            float: right;
         }
         #Bienvenido{
             text-align: left;
+            display: inline;
+        }
+        #banner{
+            width: 1024px;
+            height: 325px;
+            overflow: hidden;
+            margin: auto;
+        }
+        #banner{
+            animation-name: banner;
+        }
+        aside :nth-child(1){
+            list-style: none;
+        }
+        #sub{
+            list-style:circle;
+        }
+        #otro{
+            list-style: none;
+        }
+        aside{
+            display: inline-block;
+            width: 200px;
+            height: 1000px;
+        }
+        #aside{
+            text-align: center;
+            background-color: green;
+            height: 750px;
+        }
+        span{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        #libros{
+            display: inline-flex;
+            flex-direction: row;
+            position: absolute;
+            width: 1000px;
+            height: auto;
+        }
+        #libros2{
+            position: absolute;
+            display: inline-flex;
+            top: 810px;
+        }
+        #libros3{
+            position: absolute;
+            display: inline-flex;
+            top: 1150px;
+        }
+        .libro{
+            width: 300px;
+            height: auto;
+            display: inline-flex;
+        }
+        .libros{
+            list-style: none;
+        }
+        footer{
+            margin: auto;
+            text-align: center;
+            width: 1024px;
+            height: auto;
+            background-color: blue;
         }
         /*La propiedad flex se le pone al contenedor no al contenido*/
     </style>
@@ -45,8 +111,136 @@
         <img src="cesta.png">
     </div>
     <br>
-
     <div id="Bienvenido">Bienvenido a nuestra humilde web<div id="imagenes"><img src="facebook.jpg"><img src="instagram.jpg" alt=""><img src="twitter.jpg" alt=""><img src="linkedin.jpg" alt=""></div></div>
-    </div>
+    <div id="banner"><img src="banner1.png"><img src="banner2.png"><img src="banner3.png"><img src="banner4.png"></div>
+    <aside>
+        <ol>
+            <li>
+                Generos
+            </li>
+            <li>
+                Novela negra
+            </li>
+            <li>
+                Novela romantica
+            </li>
+            <li>
+                Ciencia ficción
+            </li>
+            <li>
+                Humor
+            </li>
+            <li>
+                Auto ayuda
+            </li>
+        </ol>
+            <li style="list-style: none; margin-left: 40px;">
+            Programación
+            <ol id="sub">
+              <li style="list-style: circle;">JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+          </li>
+        <ol id="otro">
+            <li>Infantil y juvenil</li>
+            <li>Filología</li>
+            <li>Arte</li>
+            <li>cine</li>
+        </ol>
+        <div id="aside"><span>Novedades</span>
+           <img src="libro_destacado1.jpg"><p></p>
+            <img src="libro_destacado2.jpg"><p></p>
+            <form>Suscribete
+                <input type="email" placeholder="Escribe tu correo"><button type="submit">Enviar</button>
+            </form>
+        </div>
+    </aside>
+        <div id="libros">
+            <div class="libro"><img src="libro.1.jpg" alt="">
+                <ol class="libros"id="texto">
+                    <li>Relatos</li>
+                    <li>Español</li>
+                    <li>Tapa Blanda</li>
+                    <li>1480 páginas</li>
+                    <li>pvp: 48,90</li>
+                    <li>Isbn: 64152522395</li>
+                    <li>Comprar</li>
+                </ol>
+            </div>
+            <div class="libro"><img src="libro.2.jpg" alt="">                <ol class="libros"id="texto">
+                <li>Miedo de ser dos</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>282 páginas</li>
+                <li>pvp: 18</li>
+                <li>Isbn: 6416849865395</li>
+                <li>Comprar</li>
+            </ol></div>
+            <div class="libro"><img src="libro.3.jpg" alt="">                <ol class="libros"id="texto">
+                <li>En otras palabras</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>160 páginas</li>
+                <li>pvp: 16</li>
+                <li>Isbn: 64152522395</li>
+                <li>Comprar</li>
+            </ol></div>
+        </div>
+        <div id="libros2">
+            <div class="libro"><img src="libro.4.jpg" alt=""><ol class="libros"id="texto">
+                <li>Todos deberíamos</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>64 páginas</li>
+                <li>pvp: 11</li>
+                <li>Isbn: 4554562395</li>
+                <li>Comprar</li></div>
+            <div class="libro"><img src="libro.5.jpg" alt=""><ol class="libros"id="texto">
+                <li>Lazarillo de Tormes</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>170 páginas</li>
+                <li>pvp: 12,95</li>
+                <li>Isbn: 4545535352395</li>
+                <li>Comprar</li></div>
+            <div class="libro"><img src="libro.6.jpg" alt=""><ol class="libros"id="texto">
+                <li>¿Sueñan los androides con ovejas eléctricas</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>272 páginas</li>
+                <li>pvp: 12,95</li>
+                <li>Isbn: 639842522395</li>
+                <li>Comprar</li></div>
+        </div>
+        <div id="libros3">
+            <div class="libro"><img src="libro.7.jpg" alt=""><ol class="libros"id="texto">
+                <li>Trenes rigurosamente vigilados</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>152 páginas</li>
+                <li>pvp: 16</li>
+                <li>Isbn: 548552522395</li>
+                <li>Comprar</li></div>
+            <div class="libro"><img src="libro.8.jpg" alt=""><ol class="libros"id="texto">
+                <li>El srte de emocionarte</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>144 páginas</li>
+                <li>pvp: 16,50</li>
+                <li>Isbn: 4986689522395</li>
+                <li>Comprar</li></div>
+            <div class="libro"><img src="libro.9.jpg" alt=""><ol class="libros"id="texto">
+                <li>Cien años de soledad</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>400 páginas</li>
+                <li>pvp: 21,50</li>
+                <li>Isbn: 5582522395</li>
+                <li>Comprar</li></div>
+        </div>
+</div>
+
 </body>
+<footer>Aviso legal 	Política de privacidad 	Contacto		© 2024 Nadie</footer>
 </html>
