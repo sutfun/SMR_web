@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        
+        #contenedor{
+            width: 1024px;
+            margin: auto;
+            height: auto;
+            box-sizing: content-box;
+            font-family: kanit;
+            font-size: small;
+        }
+        #navegacion{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            border-bottom: 5px solid aqua;
+            font-family: Lato;
+        }
+        p{
+            padding-top: 20px;
+            width: 200px;
+            margin-left: 50px;
+            height: auto;
+            text-align: center;
+        }
+        p:hover{
+            border-top: 2px solid blue;
+        }
+        span{
+            margin-left: 20px;
+        }
+        #imagenes{
+            display: inline;
+            float: right;
+        }
+        #Bienvenido{
+            text-align: left;
+            display: inline;
+        }
+@keyframes push {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-1024px); }
+  50% { transform: translateX(-2048px); }
+  75% { transform: translateX(-3072px); }
+  100% { transform: translateX(-4096px); }
+}
+
+.banner-container {
+  position: relative;
+  width: 1024px;
+  height: 325px;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  width: 1024px;
+  height: 325px;
+  animation: push 10s infinite;
+}
+.banner:nth-child(1){    animation-delay: 1s;
+}
+.banner:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.banner:nth-child(3) {
+  animation-delay: 5s;
+}
+
+.banner:nth-child(4) {
+  animation-delay: 7.5s;
+}
+        aside :nth-child(1){
+            list-style: none;
+        }
+        #sub{
+            list-style:circle;
+        }
+        #otro{
+            list-style: none;
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            width: 900px;
+            justify-content: flex-end;
+            box-sizing: content-box;
+            flex-wrap:wrap;
+            position: absolute;
+            left: 565px;
+            height: 500px;
+        }
+        .libro{
+
+            box-sizing: border-box;
+
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .tamaño{
+            width: 265px;
+            height: 350px;
+            padding-right: 10px;
+        }
+        #texto{
+            list-style: none;
+            padding-left: 10px;
+        }
+        aside{
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+            float: none;
+        }
+        #aside{
+            background-color: green;
+            height: auto;
+            width: 200px;
+            box-sizing: border-box;
+            display: inline;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        span{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 150px;
+            margin: auto;
+        }
+        button{
+            display: inline-block;
+            width: 75px;
+            margin: auto;
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 100px;
+        }
+        footer{
+            margin-left: 412px;
+            height: 50px;
+            width: 1024px;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /*La propiedad flex se le pone al contenedor no al contenido*/
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+    <div id="navegacion">
+        <img src="logo.jpg">
+        <p>Editorial</p>
+        <p>Catalogo</p>
+        <p>Manuscrito</p>
+        <p>Eventos</p>
+        <img src="cesta.png">
+    </div>
+    <br>
+    <div id="Bienvenido">Bienvenido a nuestra humilde web<div id="imagenes"><img src="facebook.jpg"><img src="instagram.jpg" alt=""><img src="twitter.jpg" alt=""><img src="linkedin.jpg" alt=""></div></div>
+    <div class="banner-container">
+        <img src="banner1.png" alt="Banner 1" class="banner">
+        <img src="banner2.png" alt="Banner 2" class="banner">
+        <img src="banner3.png" alt="Banner 3" class="banner">
+        <img src="banner4.png" alt="Banner 4" class="banner">
+      </div>
+    <article>
+        <div class="tamaño">
+        <div class="libro"><img src="libro.1.jpg" alt=""width="120px" height="180px">
+            <ol class="libros"id="texto">
+                <li>Relatos</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>1480 páginas</li>
+                <li>pvp: 48,90</li>
+                <li>Isbn: 64152522395</li>
+                <li>Comprar</li>
+            </ol>    
+        </div>
+        <br>
+        <span>¿Quién es Mr. Ripley? En este volumen reunimos las cinco novelas que protagonizó, empezando por su primera aparición en A pleno sol. En La máscara de Ripley, casado con una rica heredera, regresa como un hombre.
+        </span>
+        </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.2.jpg" alt="" width="120px" height="180px">                <ol class="libros"id="texto">
+            <li>Miedo de ser dos</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>282 páginas</li>
+            <li>pvp: 18</li>
+            <li>Isbn: 6416849865395</li>
+            <li>Comprar</li>
+        </ol></div>
+        <br>
+        <span>Rafael Narbona considera que la vida solo es tolerable porque existe el cine y la literatura. No es extraño por tanto que los fantasmas de Marilyn, Audrey Hepburn o Sylvia Plath se paseen por las páginas de este texto.
+        </span>
+    </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.3.jpg" alt=""width="120px" height="180px">                <ol class="libros"id="texto">
+            <li>En otras palabras</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>160 páginas</li>
+            <li>pvp: 16</li>
+            <li>Isbn: 64152522395</li>
+            <li>Comprar</li>
+        </ol></div>
+        <br>
+        <span>¿El impacto que supuso para Jhumpa Lahiri el contacto directo con el italiano durante su primera visita a Florencia tras acabar los estudios universitarios fue el comienzo de un largo cortejo que, con el tiempo, (...)
+
+        </span>
+    </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.4.jpg" alt=""width="120px" height="180px">
+            <ol class="libros"id="texto">
+                <li>Todos deberíamos ser feministas</li>
+                <li>Español</li>
+                <li>Tapa Blanda</li>
+                <li>64 páginas</li>
+                <li>pvp: 11</li>
+                <li>Isbn: 4554562395</li>
+                <li>Comprar</li>
+            </ol>
+        </div>
+        <br>
+        <span>Ser feminista no es solo cosa de mujeres. Chimamanda Ngozi Adichie lo demuestra en este elocuente y perspicaz texto, en el que nos brinda una definición singular de lo que significa ser feminista en el siglo XXI.
+
+        </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.5.jpg" alt="" width="120px" height="180px"><ol class="libros"id="texto">
+            <li>Lazarillo de Tormes</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>170 páginas</li>
+            <li>pvp: 12,95</li>
+            <li>Isbn: 4545535352395</li>
+            <li>Comprar</li></ol></div>
+            <br>
+        <span>El Lazarillo ocupa un lugar de privilegio en el nacimiento de la novela picaresca y, en general, de la novela moderna. Su desconocido autor ocultó su nombre en el anonimato, levantando así un enigma.
+
+        </span>
+    </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.6.jpg" alt=""width="120px" height="180px"><ol class="libros"id="texto">
+            <li>¿Sueñan los androides con ovejas eléctricas</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>272 páginas</li>
+            <li>pvp: 12,95</li>
+            <li>Isbn: 639842522395</li>
+            <li>Comprar</li></ol></div>
+            <br>
+        <span>En el año 2021 la guerra mundial ha exterminado a millones de personas. Los supervivientes codician cualquier criatura viva, y aquellos que no pueden permitirse pagar por ellas se ven obligados a adquirir réplicas.
+
+        </span>
+    </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.7.jpg" alt=""width="120px" height="180px"><ol class="libros"id="texto">
+            <li>Trenes rigurosamente vigilados</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>152 páginas</li>
+            <li>pvp: 16</li>
+            <li>Isbn: 548552522395</li>
+            <li>Comprar</li>
+            </ol>
+        </div>
+        <br>
+        <span>Una divertida y entrañable historia sobre la resistencia frente al invasor alemán durante la Segunda Guerra Mundial protagonizada por los empleados de la estación de tren de un pequeño pueblo checoslovaco.
+
+        </span>
+        </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.8.jpg" alt="" width="120px" height="180px"><ol class="libros"id="texto">
+            <li>El srte de emocionarte</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>144 páginas</li>
+            <li>pvp: 16,50</li>
+            <li>Isbn: 4986689522395</li>
+            <li>Comprar</li></ol></div>
+            <br>
+        <span>El nuevo libro de los autores de Emocionario. Un recorrido por cuarenta emociones expresadas a través de atractivas ilustraciones, actividades y reflexiones que nos ayudarán a explorarlas.
+
+        </span>
+    </div>
+    <div class="tamaño">
+        <div class="libro"><img src="libro.9.jpg" alt=""width="120px" height="180px"><ol class="libros"id="texto">
+            <li>Cien años de soledad</li>
+            <li>Español</li>
+            <li>Tapa Blanda</li>
+            <li>400 páginas</li>
+            <li>pvp: 21,50</li>
+            <li>Isbn: 5582522395</li>
+            <li>Comprar</li></ol></div>
+            <br>
+        <span>En ocasión del 50 aniversario de la publicación de Cien años de soledad, llega una edición con ilustraciones inéditas de la artista chilena Luisa Rivera y con una tipografía creada por el hijo del autor, Gonzalo García.
+
+        </span>
+    </div>
+    </article>
+    <aside>
+        <ol>
+            <li>
+                Generos
+            </li>
+            <li>
+                Novela negra
+            </li>
+            <li>
+                Novela romantica
+            </li>
+            <li>
+                Ciencia ficción
+            </li>
+            <li>
+                Humor
+            </li>
+            <li>
+                Auto ayuda
+            </li>
+        </ol>
+            <li style="list-style: none;">
+            Programación
+            <ol id="sub">
+              <li style="list-style: circle;">JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+          </li>
+        <ol id="otro">
+            <li>Infantil y juvenil</li>
+            <li>Filología</li>
+            <li>Arte</li>
+            <li>cine</li>
+        </ol>
+        <div id="aside"><span>Novedades</span>
+           <img src="libro_destacado1.jpg" width="120px" style="margin: auto;"><p></p>
+            <img src="libro_destacado2.jpg" width="120px" style="margin: auto;"><p></p>
+            <form><span id="sub">Suscribete</span>
+                <input type="email" placeholder="Escribe tu correo"><button type="submit">Enviar</button>
+            </form>
+        </div>
+    </aside>
+
+
+</div>
+
+</body>
+<footer><span>Aviso legal</span> 	<span>Política de privacidad</span>	<span>Contacto</span>	<span>© 2024 Nadie</span></footer>
+</html>
