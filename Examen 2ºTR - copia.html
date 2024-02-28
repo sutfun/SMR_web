@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda flex</title>
+    <style>
+        #contenedor{
+            width: 1100px;
+            margin: auto;
+            height: 3500px;
+            box-sizing: content-box;
+            font-size: small;
+            border: 1px solid black;
+            overflow:visible;
+        }
+        #titulo{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 2px solid blue;
+            margin-left: 10px;
+            width: 800px;
+        }
+        #productos{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .producto{
+            width: 800px;
+            height: 40px;
+            background-color: blue;
+            color: white;
+            font-size: x-large;
+            margin-left: 10px;
+            position: relative;
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0%;
+            margin-left: 900px;
+            float: right;
+
+
+        }
+        #producto1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        #span{
+            z-index: 1;
+            font-weight: 1500;
+            border: 1px solid black;
+        }
+        img{
+            z-index: 0;
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 1350px;
+            background-color: blue;
+            color: white;
+            position: sticky;
+            bottom: 5%;
+            z-index: 2;
+            top: 0%; 
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="titulo">
+            <h1 style="margin-top: 30px; color: aqua; font-size: x-large;">MegaStoreMogollón</h1><img src="cesta.png">
+        </div>
+
+        <div id="productos">
+            <p class="producto" id="desplegar">Relojes de marcas chulas
+                <div id="producto1">
+                    <span id="span" style="position: absolute;left: 390px; background-color: aqua; padding-left: 90px; padding-right: 90px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Reloj de "chill"</span><img src="reloj1.jpg" width="260px" height="350px" style="margin-left: 10px;">
+                    <span id="span"style="position: absolute;left: 660px; background-color: aqua; padding-left: 75px; padding-right: 65px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Reloj "flipa colega"</span><img src="reloj2.jpg" width="260px" height="350px"style="margin-left: 10px;">
+                    <span id="span"style="position: absolute;left: 910px; background-color: aqua;padding-left: 100px; padding-right: 60px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Reloj "caña de España</span><img src="reloj3.jpg" width="260px" height="350px"style="margin-left: 10px;">
+                    <span id="span" style="position: absolute; top: 520px; left: 389px; background-color: aqua;padding-left: 335px; padding-right: 323px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Colección los 4 fantásticos</span><img src="reloj4.png" width="800px" height="350px"style="margin-left: 10px;">
+                </div>
+            </p>
+
+            <p class="producto" id="producto2">Zapatos para ir de fiesta</p>
+            <div id="producto1">
+                <span id="span"style="position: absolute;left: 400px; background-color: aqua; padding-left: 100px; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Zapato 1</span><img src="zapato1.jpg" width="265px" height="350px" style="margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 658px; background-color: aqua; padding-left: 130px; padding-right: 95px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Zapato 2</span><img src="zapato2.jpg" width="265px" height="350px" style="margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 940px; background-color: aqua; padding-left: 120px; padding-right: 80px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Zapato 3</span><img src="zapato3.jpg" width="255px" height="350px" style="margin-left: 10px;">
+                <span id="span"style="position: absolute; top: 1335px; left: 389px; background-color: aqua;padding-left: 340px; padding-right: 373px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Muchos Zapatos</span><img src="zapato4.png" width="800px" height="350px" style="margin-left: 10px;">
+            </div>
+            <p class="producto" id="producto3">Camisetas para hacer el "ridi"</p>
+            <div id="producto1">
+                <span id="span"style="position: absolute;left: 390px; background-color: aqua; padding-left: 100px; padding-right: 95px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Camiseta 1</span><img src="camiseta1.jpg" width="260px" height="350px" style="margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 658px; background-color: aqua; padding-left: 105px; padding-right: 95px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Camiseta 2</span><img src="camiseta2.jpg" width="260px" height="350px" style="margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 935px; background-color: aqua; padding-left: 100px; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Camiseta 3</span><img src="camiseta3.jpg" width="260px" height="350px" style="margin-left: 15px;">
+                <span id="span"style="position: absolute; top: 2150px; left: 390px; background-color: aqua;padding-left: 220px; padding-right: 240px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Camiseta 4</span><img src="camiseta4.jpg" width="520px" height="350px" style="position: absolute; top: 2150px; margin-left: 10px;">
+                <span id="span"style="position: absolute; top: 2150px; left: 910px; background-color: aqua; padding-left: 100px; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Camiseta 5</span><img src="camiseta5.jpg" width="260px" height="350px" style="position: absolute; top: 2150px; left: 900px; margin-left: 10px;">
+            </div>
+            <p class="producto" id="producto4" style="position: absolute; top: 2500px;">Calcetines para dejarse puestos</p>
+            <div id="producto1">
+                <span id="span"style="position: absolute;left: 390px; top: 2600px; background-color: aqua; padding-left: 90px; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Calcetines 1</span><img src="camiseta1.jpg" width="260px" height="350px" style="position: absolute; top: 2600px;  margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 650px; top: 2600px; background-color: aqua; padding-left: 105px; padding-right: 105px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Calcetines 2</span><img src="camiseta2.jpg" width="260px" height="350px" style="position: absolute; top: 2600px; left: 650px; margin-left: 10px;">
+                <span id="span"style="position: absolute;left: 930px; top: 2600px; background-color: aqua; padding-left: 105px; padding-right: 90px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Calcetines 3</span><img src="camiseta3.jpg" width="260px" height="350px" style="position: absolute; top: 2600px; left: 920px; margin-left: 10px;">
+                <span id="span"style="position: absolute; top: 2960px; left: 660px; background-color: aqua;padding-left: 220px; padding-right: 240px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">calcetines 4</span><img src="camiseta4.jpg" width="520px" height="350px" style="position: absolute; top: 2960px; left: 650px; margin-left: 10px;">
+                <span id="span"style="position: absolute; top: 2960px; left: 390px; background-color: aqua; padding-left: 100px; padding-right: 100px; padding-top: 50px; padding-bottom: 50px; opacity: 0.5;">Calcetines 5</span><img src="camiseta5.jpg" width="260px" height="350px" style="position: absolute; top: 2960px; margin-left: 10px;">
+            </div>
+        </div>
+        
+        <aside>
+            <p style="border-bottom: 2px solid black;">Lo más vendido</p>
+            <ol>
+                <li>Zapatos de moda a lo loco</li>
+                <li>Vestido de fiesta alegre</li>
+                <li>Sombrero de copa para coctel</li>
+                <li>Pantalones caidos para horteras</li>
+            </ol>
+            <img src="suerte.png" width="150px" height="200px">
+        </aside>
+        <footer><span>Política de privacidad</span><span>Contacto</span><span>Redes sociales</span></footer>
+
+    </div>
+
+
+</body>
+</html>
