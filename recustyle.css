@@ -1,0 +1,118 @@
+body{
+    width: 980px;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#imagen{
+    text-align: right;
+    background-color: red;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: orange;
+}
+#hover{
+    width: 245px;
+    height: 30px;
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+}
+#hover:hover{
+    border-top: 3px solid red;
+    border-bottom:0cap;
+}
+#cuatro img{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    box-sizing: content-box;
+    width: 980px;
+    height: 30px;
+    position: absolute;
+    top: 477px;
+    left: 446px;
+    padding-top: 10px;
+
+}
+#texto{
+    position: absolute;
+    top: 140px;
+    left: 475px;
+    background-color: rgb(207, 135, 0);
+    width: 150px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: 3s;
+    border: 1px solid black;
+}
+#texto:hover{
+    overflow: none;
+    height: 320px;
+    opacity: 0.5;
+}
+#texto-1{
+    position: absolute;
+    top: 145px;
+    left: 750px;
+    background-color: rgb(207, 135, 0);
+    width: 175px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: 3s;
+    border: 1px solid black;
+}
+#texto-1:hover{
+    overflow: none;
+    height: 320px;
+    opacity: 0.5;
+}
+#texto-2{
+    position: absolute;
+    top: 150px;
+    left: 1000px;
+    background-color:  rgb(207, 135, 0);
+    width: 150px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: 3s;
+    border: 1px solid black;
+}
+#texto-2:hover{
+    overflow: none;
+    height: 240px;
+    opacity: 0.5;
+}
+#texto-3{
+    position: absolute;
+    top: 150px;
+    left: 1250px;
+    background-color:  rgb(207, 135, 0);
+    width: 150px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: 3s;
+    border: 1px solid black;
+}
+#texto-3:hover{
+    overflow: none;
+    height: 270px;
+    opacity: 0.5;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
